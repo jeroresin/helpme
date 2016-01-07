@@ -67,15 +67,9 @@ var app = {
                 "text: " + result.text + "\n" +
                 "format: " + result.format + "\n" +
                 "cancelled: " + result.cancelled + "\n");
-<<<<<<< HEAD
 			document.getElementById("info").innerHTML = result.text;		
-			//location.href="result.html";
+			
 			//document.getElementById("info").innerHTML = result.text;
-=======
-				
-			location.href="result.html";
-			document.getElementById("info").innerHTML = result.text;
->>>>>>> origin/master
             console.log(result);
             /*
             if (args.format == "QR_CODE") {
