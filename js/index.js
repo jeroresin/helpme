@@ -68,7 +68,7 @@ var app = {
                 "format: " + result.format + "\n" +
                 "cancelled: " + result.cancelled + "\n");
 			document.getElementById("info").innerHTML = result.text;		
-			location.href="result.html";
+			//location.href="result.html";
 			//document.getElementById("info").innerHTML = result.text;
             console.log(result);
             /*
