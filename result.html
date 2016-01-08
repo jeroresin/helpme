@@ -12,10 +12,22 @@
 		</div>
 		<script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="barcodescanner.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="jquery.js"></script>
         <script type="text/javascript">
             //app.initialize();
-			document.getElementById("info").innerHTML = getUrlVars()['value'];
+			//document.getElementById("info").innerHTML = getUrlVars()['value'];
+			
+			$(document).ready(function(){
+				$('#info').html( getUrlVars()['value']  );
+				
+				$.getJSON( getUrlVars()['value'] , function(result){
+					$.each(result, function(i, field){
+						$("#info").append(field + " ");
+					});
+				});
+				
+			});
+			
 			function getUrlVars() {
 			var vars = {};
 			var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi,    
@@ -25,5 +37,6 @@
 			return vars;
 		  }
         </script>
+		
 	</body>
 </html>

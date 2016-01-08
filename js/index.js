@@ -63,8 +63,8 @@ var app = {
             "Format: " + result.format + "\n" + 
             "Cancelled: " + result.cancelled); 
 			*/
-			//window.location="result.html?value="+result.text;			
-			window.location= "result";
+			window.location="result.html?value="+result.text;			
+			//window.location= "result.text";
            console.log("Scanner result: \n" +
                 "text: " + result.text + "\n" +
                 "format: " + result.format + "\n" +
