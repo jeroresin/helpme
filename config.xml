@@ -59,6 +59,7 @@
 
     <gap:splash src="res/screen/windows-phone/screen-portrait.jpg" gap:platform="winphone" />
 	<access origin= "*" />
-	<!-- <access uri="*" subdomains="true" /> -->
+	<access origin="https://*" />
+	<access uri="*" subdomains="true" />
     <!-- content src="http://www.w3.org/2010/05/video/mediaevents.html" / -->
 </widget>
